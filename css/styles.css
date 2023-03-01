@@ -22,10 +22,25 @@ body {
 
   width: 1158px;
 
-  padding-left: 0;
-  padding-right: 0;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+.img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
 /* HEADER */
 
 .logo-header {
@@ -107,6 +122,7 @@ body {
   height: 72px;
   display: flex;
   align-items: center;
+  border-bottom: solid 1px var(--last-abz-color);
 }
 
 /* SECTION 1.1 */
@@ -119,7 +135,7 @@ body {
   line-height: 1.05;
   background-color: var(--logo-r-color);
   padding: 0;
-  margin-bottom: 48;
+  margin-bottom: 48px;
 }
 
 .herobutton {
@@ -132,6 +148,7 @@ body {
   border: 1px;
   min-width: 169px;
   min-height: 56px;
+  margin: 0;
 }
 
 .herobutton:hover,
@@ -144,8 +161,8 @@ body {
 .container-hero {
   background-color: var(--logo-r-color);
   text-align: center;
-  padding-top: 188px;
-  padding-bottom: 292px;
+  padding-top: 0;
+  padding-bottom: 0;
 }
 
 /* SECTION 1.2 */
@@ -156,12 +173,18 @@ body {
   margin: 0;
 }
 
+.hero-section {
+  padding-top: 188px;
+  padding-bottom: 188px;
+}
+
 .buttons {
   list-style: none;
   display: flex;
   gap: 24px;
   justify-content: center;
-  margin: 0 0 0 0;
+  margin: 0;
+  margin-bottom: 72px;
   padding: 0;
 }
 
@@ -175,6 +198,7 @@ button {
   border: 1px;
   padding: 16px 32px 16px 32px;
   border-radius: 4px;
+  margin-bottom: 0;
 }
 
 button:hover,
@@ -185,10 +209,10 @@ button:focus {
 }
 
 .button-position {
-  margin: 96px 0 0 0;
-  width: 1158px;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 0;
+
+  padding-top: 96px;
+  padding-bottom: 72px;
 }
 
 /* SECTION 2.1. */
@@ -199,8 +223,8 @@ button:focus {
   font-size: 20px;
   line-height: 1.2;
 
-  padding: 0 0 8px 0;
-  margin: 0;
+  margin: 0 0 8px 0;
+  padding: 0;
 }
 
 /* 260223 */
@@ -214,7 +238,7 @@ button:focus {
   list-style: none;
 
   padding: 0;
-  margin: 120px 0 0 0;
+  margin: 0 0 0 0;
   display: flex;
   text-align: left;
   gap: 24px;
@@ -223,7 +247,7 @@ button:focus {
 .key-points {
   color: var(--contact-color);
   font-family: 'Roboto', sans-serif;
-  font-weight: 400;
+
   font-size: 16px;
   line-height: 1.5;
 
@@ -232,10 +256,11 @@ button:focus {
 }
 
 /* 260223 */
-/* .container-section {
+.container-section {
   text-align: center;
-  padding: 120px 0;
-} */
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
 
 /* SECTION 2.2. */
 
@@ -243,7 +268,7 @@ button:focus {
   list-style: none;
   display: flex;
   margin: 0 0 0 0;
-  gap: 24px;
+  gap: 48px 24px;
   flex-wrap: wrap;
   padding: 0;
 }
@@ -267,16 +292,16 @@ button:focus {
   margin: 0;
 }
 
-.list-proj-ramka {
-  border: var(--last-abz-color) solid 1px;
-}
-
-.container-project-position {
-  padding: 72px 0 0 0;
-}
-
 .point-proj-pos {
   padding: 32px 54px 32px 16px;
+
+  border-left: var(--last-abz-color) solid 1px;
+  border-bottom: var(--last-abz-color) solid 1px;
+  border-right: var(--last-abz-color) solid 1px;
+}
+
+.ramka-img {
+  display: block;
 }
 
 /* SECTION3 */
@@ -290,7 +315,7 @@ button:focus {
   text-align: center;
 
   padding: 0;
-  margin: 120px 0 72px 0;
+  margin: 0 0 72px 0;
 }
 
 .what-we-do-list {
@@ -319,8 +344,8 @@ button:focus {
   color: var(--logo-r-color);
   text-align: center;
 
-  padding: 0 0 72px;
-  margin: 0;
+  margin: 0 0 72px;
+  padding: 0;
 }
 
 .list-team-table {
@@ -340,8 +365,8 @@ button:focus {
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
-  padding: 0 0 8px 0;
-  margin: 0;
+  margin: 0 0 8px 0;
+  padding: 0;
   text-align: center;
   background-color: var(--center-color);
 }
