@@ -122,6 +122,9 @@ p {
   height: 72px;
   display: flex;
   align-items: center;
+}
+
+.linie-header {
   border-bottom: solid 1px var(--last-abz-color);
 }
 
